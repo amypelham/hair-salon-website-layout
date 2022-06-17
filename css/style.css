@@ -1,0 +1,357 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: black;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: white;
+}
+
+p {
+  text-transform: none;
+}
+
+ul li{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+a{
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+img{
+  width: 100%;
+}
+
+
+/******************************************
+/* NAVIGATION / HEADER
+/*******************************************/
+header{
+  display: flex;
+  height: 60PX;
+  color: #000;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px 0px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.headerSpan{
+  width: 10%;
+  justify-content: space-evenly;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+nav {
+  width: 50%;
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+}
+  
+nav ul a, nav ul a:visited {
+  color: black
+ }
+
+
+nav li{
+  width: 100%;
+  color: black;
+  justify-content: space-evenly;
+  padding: -5px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: -5px;
+}
+
+button {
+  color: white;
+  border: none;
+  background-color:#000;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+main{
+  width: auto;
+  display: flex;
+  clear: both;
+  color: black;
+  text-align: left;
+  background-image: url(https://i.ibb.co/t4bFLkp/main.png);
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 70vh;
+  background-position: right;
+  background-size: fill;
+}
+
+@media screen and (max-width: 900px) {
+  main{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main{
+    background-image: none;
+    /* width: 100%;
+    height: 10%; */
+    background: linear-gradient(rgb(245, 242, 60), rgb(229, 245, 10), pink, rgb(243, 96, 243), rgb(25, 153, 228));
+    color: rgb(36, 52, 196);
+    border-radius: 5%;
+  }
+}
+
+.titleSection {
+  margin-left: 15%;
+  margin-top: 20%;
+  padding: 0 20% 0 5%;
+  color: black;
+}
+
+.titleSection h1{
+  font-size: 5rem;
+}
+
+.titleSection p{
+  font-size: .9rem;
+  margin-top: -20%;
+  margin-bottom: 7%;
+}
+
+.firstPromo {
+  margin-left: 20%;
+  margin-top: 15%;
+  padding: 20px;
+  width: 45%;
+  background-color: black;
+  color: white;
+  line-height: 2rem;
+}
+
+.bigBoldSpan {
+  font-size: 2.5rem;
+}
+
+.promoButton {
+  color: black;
+  border: none;
+  background-color:white;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block
+}
+
+.mainFeatures{
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: white;
+  height: 35vh;
+  margin-top: 140px;
+}
+
+.icons {
+  width: 75px;
+}
+
+.features {
+  width: 25%;
+}
+
+/******************************************
+/* SUB SECTIONS
+/*******************************************/
+
+.sectionMomentum {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e1f7fc;
+  padding: 50px 0px;
+}
+
+.momentumText {
+  width: 30%;
+  text-align: left;
+}
+
+.momemtum {
+  width: 100%;
+}
+
+.stylistCard {
+  width: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: white;
+  height: 50vh;
+  margin: 50px 0px;
+  padding: 50px 0px;
+}
+
+.stylists {
+  width: 28%;
+
+}
+
+.stylistCard img{
+  width: 250px;
+}
+
+.buttonStylist {
+  width: 200px;
+  color: white;
+  background-color:#000;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  transform: translate(50%, -50%);
+  padding: 15px 0px 5px 0px;
+  line-height: .5rem;
+}
+
+.secondPromo { 
+  background-image: url(https://i.ibb.co/7YKt11g/img10.jpg);
+  background-position: center;
+  height: 40vh;
+  background-size: fill;
+  background-repeat: no-repeat;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.promoText {
+  margin: 50px 400px 50px 0px;
+  text-align: left;
+  text-transform: uppercase;
+  color: black;
+  line-height: 2rem;
+  width: 200px;
+  text-align: left;
+}
+
+.promoButton {
+  color: black;
+  border: none;
+  background-color:white;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block
+}
+
+/******************************************
+/* GALLERY
+/*******************************************/
+.lookbook {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 35vh;
+  margin-top: 100px;
+}
+
+.lookbook h2 {
+  width: 100%;
+}
+
+hr {
+  background-color: #000;
+  flex-wrap: wrap;
+  height: 2px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.column {
+  flex: 33%;
+  max-width: 27%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 250px;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  padding: 0 4px;
+  justify-content: center;
+}
